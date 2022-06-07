@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras v1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+   <main class="container mt-5">
+
+       <div class="row text-center">
+
+           <article class="col-sm-4 mb-4">
+               <div class="card">
+                   <div class="card-body">
+                       <h5 class="card-title">Apple🍎</h5>
+                       <button class="btn btn-outline-primary" data-fruta="apple">Añadir</button>
+                   </div>
+               </div>
+           </article>
+
+           <article class="col-sm-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Banana🍌</h5>
+                    <button class="btn btn-outline-primary" data-fruta="banana">Añadir</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-sm-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">StrwBerry🍓</h5>
+                    <button class="btn btn-outline-primary" data-fruta="strawberry">Añadir</button>
+                </div>
+            </div>
+        </article>
+
+       </div>
+
+   </main>
+
+    <section class="container mt-3">
+        <ul class="list-group" id="car">
+        </ul>
+    </section>
+
+    <template id="template">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="lead">textext</span>
+            <span class="badge bg-primary rounded-pill">10</span>
+        </li>
+    </template>
+
+    <script src="/Proyecto/Carrito de compras/main.js"></script>
+</body>
+</html>
